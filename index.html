@@ -73,13 +73,40 @@
           return "";
       }
 
+      function formatCondition(condition) {
+        if (condition) {
+          switch (condition) {
+            case "1":
+              return "Used - Like New";
+            case "2":
+              return "Used - Very Good";
+            case "3":
+              return "Used - Good";
+            case "4":
+              return "Used - Acceptable";
+            case "5":
+              return "Collectible - Like New";
+            case "6":
+              return "Collectible - Very Good";
+            case "7":
+              return "Collectible - Good";
+            case "8":
+              return "Collectible - Acceptable";
+            default:
+              return condition;
+          }
+        } else {
+          return "";
+        }
+      }
+
       CsvToHtmlTable.init({
         csv_path: 'data/05-01-2018.csv',
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false},
-        custom_formatting: [[1, formatUSD]]
+        custom_formatting: [[1, formatUSD],[3, formatCondition]]
       });
     </script>
   </body>
