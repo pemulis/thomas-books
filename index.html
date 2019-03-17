@@ -52,16 +52,23 @@
 
 
     <script type="text/javascript">
-      function format_link(link){
+      function formatLink(link) {
         if (link)
           return "<a href='" + link + "' target='_blank'>" + link + "</a>";
         else
           return "";
       }
 
-      function strong(text){
+      function formatStrong(text) {
         if (text)
           return "<strong>" + text + "</strong>";
+        else
+          return "";
+      }
+
+      function formatUSD(price) {
+        if (price)
+          return "$" + Number.parseFloat(price).toFixed(2);
         else
           return "";
       }
@@ -72,7 +79,7 @@
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false},
-        //custom_formatting: [[0, strong]]
+        custom_formatting: [[1, formatUSD]]
       });
     </script>
   </body>
