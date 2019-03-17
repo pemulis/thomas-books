@@ -1,16 +1,16 @@
-# CSV to HTML Table
+# Thomas Books
 
-Display any CSV file as a searchable, filterable, pretty HTML table. Done in 100% JavaScript.
+Searchable, filterable, pretty HTML table forked with gratitude from https://github.com/derekeder/csv-to-html-table. Done in 100% JavaScript.
 
-Check out the working demo: http://derekeder.github.io/csv-to-html-table/
+Check out the dev site: http://pemulis.github.io/thomas-books/
 
 ## Usage
 
 #### 1. Clone this repository (in the command line)
 
 ``` bash
-git clone git@github.com:derekeder/csv-to-html-table.git
-cd csv-to-html-table
+git clone git@github.com:pemulis/thomas-books.git
+cd thomas-books
 ```
 
 #### 2. Add your CSV file to the `data/` folder
@@ -20,8 +20,8 @@ cd csv-to-html-table
 ``` html
 <script>
   CsvToHtmlTable.init({
-    csv_path: 'data/Health Clinics in Chicago.csv', 
-    element: 'table-container', 
+    csv_path: 'data/05-01-2018.csv',
+    element: 'table-container',
     allow_download: true,
     csv_options: {separator: ',', delimiter: '"'},
     datatables_options: {"paging": false}
@@ -59,8 +59,8 @@ Example:
 
   //initializing the table
   CsvToHtmlTable.init({
-    csv_path: 'data/Health Clinics in Chicago.csv', 
-    element: 'table-container', 
+    csv_path: 'data/05-01-2018.csv',
+    element: 'table-container',
     allow_download: true,
     csv_options: {separator: ',', delimiter: '"'},
     datatables_options: {"paging": false},
@@ -89,7 +89,7 @@ navigate to http://localhost:8000/
 git push origin master:gh-pages
 ```
 
-Then navigate to http://your-github-username.github.io/csv-to-html-table/
+Then navigate to http://your-github-username.github.io/thomas-books/
 
 Read more on working with [GitHub pages projects](https://help.github.com/articles/user-organization-and-project-pages/#project-pages).
 
@@ -100,7 +100,7 @@ Read more on working with [GitHub pages projects](https://help.github.com/articl
 Want to embed your nifty table on your website? You can use an [iframe](http://www.w3schools.com/tags/tag_iframe.asp). Once you've deployed your table (above in step 5) you can link to it in an iframe right in your HTML.
 
 ```html
-<iframe style="border-style: none;" src="http://derekeder.github.io/csv-to-html-table/" height="950" width="600"></iframe>
+<iframe style="border-style: none;" src="http://pemulis.github.io/thomas-books/" height="950" width="600"></iframe>
 ```
 
 ## Dependencies
@@ -115,31 +115,13 @@ Want to embed your nifty table on your website? You can use an [iframe](http://w
 If your table isn't displaying any data, try the following:
 
 1. Use the [Chrome developer console](https://developers.google.com/chrome-developer-tools/docs/console) or install [Firebug](http://getfirebug.com/) for FireFox. This will allow you to debug your javascript.
-1. Open your table in the browser and open the javascript console 
+1. Open your table in the browser and open the javascript console
    * Chrome developer console on a Mac: Option+Command+J
    * Chrome developer console on a PC: Control+Shift+J
-   * Firebug in Firefox: Tools => Web Developer => Firebug => Open Firebug) 
+   * Firebug in Firefox: Tools => Web Developer => Firebug => Open Firebug)
 1. If you do see javascript errors, the error will tell you what line it is failing on. Best to start by going there!
 
 ## Errors / Bugs
 
 If something is not behaving intuitively, it is a bug, and should be reported.
-Report it here: https://github.com/derekeder/csv-to-html-table/issues
-
-
-## Contributors 
-
-* [Derek Eder](http://derekeder.com) - primary contributor
-* [ychaouche](https://github.com/ychaouche) - [javascript tag fixes](https://github.com/derekeder/csv-to-html-table/pull/30)
-* [Freddy Martinez](https://github.com/b-meson) - [localized javascript libraries](https://github.com/derekeder/csv-to-html-table/pull/17)
-* [Sergey Ponomarev](https://github.com/stokito) - [CSV escaped in HTML output](https://github.com/derekeder/csv-to-html-table/pull/60)
-
-## Note on Patches/Pull Requests
- 
-* Fork the project.
-* Make your feature addition or bug fix.
-* Send a pull request. Bonus points for topic branches.
-
-## Copyright
-
-Copyright (c) 2018 Derek Eder. Released under the [MIT License](https://github.com/derekeder/csv-to-html-table/blob/master/LICENSE).
+Report it here: https://github.com/pemulis/thomas-books/issues
