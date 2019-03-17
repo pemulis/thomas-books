@@ -59,13 +59,20 @@
           return "";
       }
 
+      function strong(text){
+        if (text)
+          return "<strong>" + text + "</strong>";
+        else
+          return "";
+      }
+
       CsvToHtmlTable.init({
         csv_path: 'data/05-01-2018.csv',
         element: 'table-container',
         allow_download: true,
         csv_options: {separator: ',', delimiter: '"'},
         datatables_options: {"paging": false},
-        custom_formatting: [[4, format_link]]
+        custom_formatting: [[0, strong]]
       });
     </script>
   </body>
