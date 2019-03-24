@@ -1,0 +1,26 @@
+{
+  "name": "thomas-books",
+  "version": "1.0.0",
+  "description": "Indie website for Thomas Books",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pemulis/thomas-books.git"
+  },
+  "keywords": [
+    "bookstore",
+    "books",
+    "amazon-mws"
+  ],
+  "author": "John Shutt (@pemulis)",
+  "bugs": {
+    "url": "https://github.com/pemulis/thomas-books/issues"
+  },
+  "homepage": "https://github.com/pemulis/thomas-books#readme",
+  "dependencies": {
+    "amazon-mws": "0.0.23"
+  }
+}
